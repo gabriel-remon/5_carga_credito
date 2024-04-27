@@ -1,0 +1,58 @@
+ion-content {
+    --background: black;
+}
+
+.conteiner{
+    color: rgb(44, 135, 196);
+    font-style: italic;
+    h1{
+        margin-top: 60%;
+        opacity: 1;
+        animation: slideBotom 1.5s ease forwards;
+        animation-delay: 2s;
+    }
+    img{
+        height: 150px;
+        animation: zoom 2s ease forwards;
+        animation-delay: 3s;
+    }
+    h2{
+        opacity: 1;
+        animation: slideTop 1.5s ease forwards;
+        animation-delay: 2s;
+    }
+    
+}
+
+@keyframes slideTop{
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}
+
+@keyframes slideBotom{
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+@keyframes zoom{
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(8);
+        opacity: 1;
+    }
+}
+
