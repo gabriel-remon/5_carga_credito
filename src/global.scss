@@ -25,9 +25,22 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-ion-button {
+ion-toolbar{
+    --background : #93fade;
+    --color : #54fa94
+}
+
+
+ion-button{
+    --background: #343434;
+    --color: white;
+    --border-color: #343434;
     text-transform: none;
 }
+
+
+
+
 
 // safe padding for ios
 .safe-p-bottom{
