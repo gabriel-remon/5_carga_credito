@@ -1,7 +1,42 @@
-<app-header titulo="Inicio"></app-header>
-
 <ion-content [fullscreen]="true">
-  <ion-button (click)="singOut()">
-    cerrar secion
-  </ion-button>
+
+
+  <div class="pagina">
+
+
+
+    <div class="contenedor usuario">
+      <h3>Bienvenido: {{user.displayName}}</h3>
+      <h4>Tipo de cuenta: {{tipoCuenta}}</h4>
+    </div>
+
+    <div class="contenedor puntos">
+      <h4>Total de creditos:</h4>
+      <h2 class="totalPuntos"> <strong>{{creditoActual}}</strong> </h2>
+
+      <p>Agregue mas creditos</p>
+      <img src="assets/qr.webp" alt="imagen de qr" (click)="scanQr()">
+
+
+    </div>
+
+    <p>qr actual : {{creditoActual}}</p>
+
+    <ion-col>
+      <ion-row>
+
+        <ion-button (click)="singOut()" class="exit">
+          cerrar secion
+          <ion-icon slot="end" name="power"></ion-icon>
+        </ion-button>
+        <ion-button class="borrarPuntos" (click)="limpiarPuntos()">
+          Borrar puntos
+          <ion-icon slot="end" name="trash"></ion-icon>
+        </ion-button>
+      </ion-row>
+     
+    </ion-col>
+
+
+  </div>
 </ion-content>

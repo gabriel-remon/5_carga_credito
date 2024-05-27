@@ -1,0 +1,63 @@
+.contenedor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+.usuario,.puntos,.visorQr {
+
+    background: aliceblue;
+    border: 2px solid rgba(0, 0, 0, 0.323);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    margin: 15px;
+    padding: 10px;
+    padding-top: 0;
+    background-color : #93fade;
+    color: black;
+}
+
+
+body{
+
+}
+
+
+.usuario{
+    margin-top: 0;
+}
+.puntos {
+    
+}
+
+.visorQr {
+    
+}
+
+.exit {
+  
+    margin-left: auto;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.pagina{
+    padding: 20px;
+
+}
+
+h2{
+    font-size: 50px;
+}
+
+.borrarPuntos{
+    justify-content: end;
+    margin-left: auto;
+    height: 20px;
+    margin-top: 20px;   
+}

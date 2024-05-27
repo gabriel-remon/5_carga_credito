@@ -1,6 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoadingController, ToastController, ToastOptions } from '@ionic/angular';
+import { getAuth } from 'firebase/auth';
 
 @Injectable({
   providedIn: 'root'
@@ -30,6 +31,10 @@ export class UtilsService {
 
   getFrontLocalStorage(key: string) {
     return JSON.parse(localStorage.getItem(key))
+  }
+
+  getUser(){
+    return getAuth().currentUser
   }
 
 }
